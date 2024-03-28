@@ -17,7 +17,7 @@ class getData{
 
   static Future<List<tag_listTodo>> get UIread async {
     List<tag_listTodo> list = [];
-    String url = 'http://localhost:3000/users/';
+    String url = '';
     final uri = Uri.parse(url);
     http.Response response = await http.get(uri);
     if(response.statusCode == 200){
